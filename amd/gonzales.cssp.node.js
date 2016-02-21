@@ -1,3 +1,5 @@
+define(function (require, exports, module) {
+
 var srcToCSSP = (function() {
 var TokenType = {
     StringSQ: 'StringSQ',
@@ -2295,3 +2297,5 @@ var getCSSPAST = (function() {
     }
 }());
 exports.srcToCSSP = srcToCSSP;
+
+});
