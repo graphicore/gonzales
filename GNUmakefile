@@ -17,9 +17,6 @@ cssp:
 	@cat src/cssp.translator.node.js >> lib/cssp.translator.node.js
 # quick and dirty AMD modules
 	@mkdir -p amd
-	@echo $(STARTAMD) > amd/gonzales.js
-	@cat lib/gonzales.js >> amd/gonzales.js
-	@echo $(ENDAMD) >> amd/gonzales.js
 	@echo $(STARTAMD) > amd/gonzales.cssp.node.js
 	@cat lib/gonzales.cssp.node.js >> amd/gonzales.cssp.node.js
 	@echo $(ENDAMD) >> amd/gonzales.cssp.node.js

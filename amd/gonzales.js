@@ -1,10 +1,9 @@
 define(function (require, exports, module) {
 
 // CSSP
+exports.srcToCSSP = require('./gonzales.cssp.node').srcToCSSP;
 
-exports.srcToCSSP = require('./gonzales.cssp.node.js').srcToCSSP;
-
-exports.csspToSrc = require('./cssp.translator.node.js').csspToSrc;
+exports.csspToSrc = require('./cssp.translator.node').csspToSrc;
 
 exports.csspToTree = function(tree, level) {
     var spaces = dummySpaces(level),
